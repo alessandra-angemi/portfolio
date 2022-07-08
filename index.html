@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Karla:wght@200&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Alessandra Angemi | Home</title>
+</head>
+<link rel="stylesheet" href="assets/css/homepage.css">   
+<link rel="stylesheet" href="assets/css/bio.css"> 
+<body>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+                <source media="(min-width:500px)" srcset="assets/images/photo1.jpg" class="d-block w-100">
+                <img src="assets/images/photo1s.jpg" class="d-block w-100 vertical" alt="...">
+              </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+                <source media="(min-width:500px)" srcset="assets/images/photo2.jpg" class="d-block w-100">
+                <img src="assets/images/photo2s.jpg" class="d-block w-100 vertical" alt="...">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+                <source media="(min-width:500px)" srcset="assets/images/photo3.jpg" class="d-block w-100">
+                <img src="assets/images/photo3s.jpg" class="d-block w-100 vertical" alt="...">
+            </picture>
+          </div>
+          <div class="carousel-item">
+            <picture>
+                <source media="(min-width:500px)" srcset="assets/images/photo4.jpg" class="d-block w-100">
+                <img src="assets/images/photo4s.jpg" class="d-block w-100 vertical" alt="...">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div id="title">
+          <p class="text-center" style="margin-top: 3%; font-size: 3.5em;">Alessandra Angemi</p>
+          <div class="nav justify-content-center">
+            <a class="nav-link" style="border-bottom: #ced4da 3px solid; border-radius: 3px">Home</a>
+            <a class="nav-link" href="#bio">Bio</a>
+            <a class="nav-link" href="#corti" >Cortometraggi</a>
+            <a class="nav-link" href="#bio" onclick="triggerContacts()">Contattami</a>
+          </div>
+      </div>
+      <div>
+        <div class="row" id="bio">
+          <div class="col-lg-6">
+            <h1 style="color:#E63946; font-family: 'Lato', sans-serif;">Chi è <b>Alessandra</b></h1>
+            <h4 style="color: #1D3557; font-family: 'Lato', sans-serif;">Alessandra Angemi è una regista e sceneggiatrice italiana dal 2014, <br>
+                                                                           quando ha conseguito il diploma di regia presso la Vision Academy di Roma. <br>
+                                                                          
+                                                                          </h4>
+            <div style="color: #457B9D;">
+              <p>Durante il proprio percorso, Alessandra ha diretto <b><a href="#corti">3 cortometraggi</a></b>, e ha svolto il ruolo di assistente alla regia per altri lavori. 
+                 Non è tutto, infatti ha anche scritto <b>7 sceneggiature</b>, e con l'ultima di queste ha vinto, nel 2021, il premio per la miglior sceneggiatura per cortometraggio al Vision Film Festival di Roma.
+              </p>
+              <p>
+                In questi anni ha maturato esperienza nelle principali fasi di lavorazione di un audiovisivo, dall'idea:
+                <ul>
+                  <li>alla stesura di soggetto e sceneggiatura;</li>
+                  <li>alla stesura del decoupage;</li>
+                  <li>al casting;</li>
+                  <li>all'identificazione delle location, inclusi gli accordi con enti pubblici e privati;</li>
+                  <li>alle riprese sul set;</li>
+                  <li>Al montaggio e selezione delle musiche;</li>
+                </ul>
+              </p>
+            </div>
+            <div style="color: #457B9D; font-family: 'Roboto', sans-serif;" id="contatti">
+              Se vuoi saperne di più, visita il profilo <b><a href="">Facebook</a></b>, o manda una mail ad <b>alessandra.angemi@gmail.com</b>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <img src="assets/images/profilo2.png" alt="Immagine non disponibile" style="padding-bottom: 3vh;" id="profilo">
+          </div>
+        </div>
+      </div>
+      <div class="short" style="background-image: url('assets/images/arsenale.jpg');" id="corti">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 id="arsenale">L'ARSENALE</h1>
+            <p class="desc">Drammatico, 2014</p>
+            <p class="desc">Scritto da <i>Alessandra Angemi</i></p>
+            <p class="desc">Con <i>Priscilla Pagliaricci</i></p>
+          </div>
+          <div class="col-sm-6">
+            <iframe src="https://player.vimeo.com/video/425938662" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="short" style="background-image: url('assets/images/laresa.jpg');">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 id="resa">LA RESA</h1>
+            <p class="desc">Drammatico, 2017</p>
+            <p class="desc">Scritto da <i>Lorenzo Larcan</i></p>
+            <p class="desc">Con <i>Claudio Gabriele</i></p>
+          </div>
+          <div class="col-sm-6">
+            <iframe src="https://player.vimeo.com/video/427531421" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="short" style="background-image: url('assets/images/regalo.jpg');" id="regalobg">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 id="regalo">Regalo di natale</h1>
+            <p class="desc">Drammatico, 2022</p>
+            <p class="desc">Scritto da <i>Alessandra Angemi</i></p>
+            <p class="desc">Con <i>Edoardo Lombardi</i> e <i>Michele Teseo</i></p>
+          </div>
+          <div class="col-sm-6">
+            <img src="assets/images/regalo_natale.jpg" alt="Immagine non disponibile" style="width: 175px; height:auto;">
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+    function triggerContacts(){
+      document.getElementById('contatti').classList.add('focused');
+    }
+    </script>
+</body>
+</html>

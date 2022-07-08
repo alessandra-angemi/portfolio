@@ -1,0 +1,29 @@
+#profilo {
+    height: 100vh;
+    width: auto;
+    filter: grayscale(100%);
+}
+
+a {
+    text-decoration: none;
+    color: #457B9D;
+}
+
+a:hover {
+    color: #b1a7a6;
+}
+
+.col-lg-6 > * {
+    padding-left: 5vw;
+    padding-top: 4vh;
+}
+
+@media screen and (max-width: 800px) {
+    .col-lg-6 > * {
+        margin-left: 0;
+        margin-right: 5vh;
+    }
+    #profilo {
+        height: 60vh;
+    }
+}
